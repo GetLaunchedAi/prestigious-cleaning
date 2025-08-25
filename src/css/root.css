@@ -4,12 +4,12 @@
 /* Mobile */
 @media only screen and (min-width: 0em) {
   :root {
-    --primary: #71797E; /* Base Gray */
-    --primaryShade: #9AA1A6; /* Lighter Cool Gray */
-    --primaryDark: #4B5358; /* Deep Charcoal Gray */
-    --bodyTextColor: #5F666B; /* Medium Slate Gray */
-    --bodyTextColorWhite: #F5F6F7; /* Soft Neutral White */
-    --headerColor: #3E4448; /* Dark Steel Gray */
+    --primary: #CFA349; /* Rich Gold */
+    --primaryShade: #E6C879; /* Soft Golden Yellow */
+    --primaryDark: #8A6A2A; /* Deep Bronze Gold */
+    --bodyTextColor: #2E2E2E; /* Charcoal Black */
+    --bodyTextColorWhite: #F9F9F9; /* Clean Soft White */
+    --headerColor: #1A1A1A; /* Pure Deep Black */
 
     /* 13px - 16px */
     --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);

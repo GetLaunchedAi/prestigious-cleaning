@@ -1,15 +1,15 @@
 {
-  "name": "Michigan Fencing Solutions",
-  "email": "Richardsturd@gmail.com",
-  "phone": "269-615-8646",
-  "phoneFormatted": "(269) 615-8646",
+  "name": "Prestigious Cleaning and Sanitation LLC",
+  "email": "Lamnguyen@prestigiouscs.com",
+  "phone": "+16168560941",
+  "phoneFormatted": "(616) 856-0941",
   "address": {
-    "lineOne": "Kalamazoo, MI 49024, United States",
+    "lineOne": "PO Box 11 Comstock MI 49071",
     "lineTwo": "",
-    "city": "Kalamazoo",
-    "county": "Kalamazoo County",
-    "postcode": "49024",
-    "mapLink": "https://maps.app.goo.gl/Xj2fBuK1cVarKzdF6"
+    "city": "",
+    "county": "",
+    "postcode": "",
+    "mapLink": "https://maps.app.goo.gl/hkSPwhhuu2BRJVrCA"
   },
-  "domain": "puremichiganfencingsolutions.com"
+  "domain": "https://prestigiouscleaningandsanitation.com/"
 }
