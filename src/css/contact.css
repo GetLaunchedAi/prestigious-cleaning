@@ -486,6 +486,6 @@
     background: var(--medium);
   }
   body.dark-mode #reviews .cs-desc {
-    color: var(--primaryLight);
+    color: var(--primaryShade);
   }
 }
