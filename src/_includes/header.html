@@ -38,13 +38,13 @@
                         {{ entry.title }}
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a href="/janitorial/">Janitorial Services</a></li>
-                        <li><a href="/sanitation/">Sanitation Services</a></li>
-                        <li><a href="/construction/">Construction Cleaning</a></li>
+                        <li><a class="service-link" href="/janitorial/">Janitorial Services</a></li>
+                        <li><a class="service-link" href="/sanitation/">Sanitation Services</a></li>
+                        <li><a class="service-link" href="/construction/">Construction Cleaning</a></li>
                     </ul>
 
                     {% else %}
-                    <a {% if entry.url==page.url %} class="active" {% endif %} href="{{ entry.url }}">
+                    <a {% if entry.url==page.url %} class="custom-active" {% endif %} href="{{ entry.url }}">
                         {{ entry.title }}
                     </a>
                     {% endif %}

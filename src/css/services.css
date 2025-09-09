@@ -358,12 +358,14 @@
   }
   #content-page-1402 .cs-card-group {
     width: 100%;
-    max-width: 39.375rem;
+    /* max-width: 39.375rem; */
     margin: 0 0 1.5rem 0;
     padding: 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15.265rem, 1fr));
-    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* grid-template-columns: repeat(auto-fit, minmax(15.265rem, 1fr)); */
+    /* align-items: center; */
     gap: clamp(1rem, 2vw, 1.25rem);
   }
   #content-page-1402 .cs-item {
