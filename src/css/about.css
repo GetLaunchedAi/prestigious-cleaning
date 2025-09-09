@@ -1,3 +1,11 @@
+:root {
+  --dark: #1a1a1a;
+  /* dark grey */
+  --medium: #2c2c2c;
+  /* dark grey */
+  --accent: #334756;
+}
+
 /*-- -------------------------- -->
 <---       Side By Side         -->
 <--- -------------------------- -*/
@@ -210,7 +218,7 @@
   }
 
   body.dark-mode #sbs .cs-flex-group {
-    background-color: var(--accent);
+    background-color: var(--medium);
   }
 
   body.dark-mode #sbs .cs-job {

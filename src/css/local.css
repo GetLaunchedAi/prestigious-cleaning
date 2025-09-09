@@ -174,7 +174,7 @@
     color: var(--bodyTextColorWhite);
   }
   body.dark-mode #sbs .cs-flex-group {
-    background-color: var(--accent);
+    background-color: var(--medium);
   }
   body.dark-mode #sbs .cs-job {
     color: var(--bodyTextColorWhite);
