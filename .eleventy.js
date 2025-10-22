@@ -1,5 +1,6 @@
 // imports for the various eleventy plugins (navigation & image)
 const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
+const sitemapPlugin = require('@quasibit/eleventy-plugin-sitemap');
 const { DateTime } = require('luxon');
 const Image = require('@11ty/eleventy-img');
 const path = require('path');
@@ -51,6 +52,18 @@ async function imageShortcode(src, alt, className, loading, sizes = '(max-width:
 module.exports = function (eleventyConfig) {
   // adds the navigation plugin for easy navs
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
+  
+  // adds the sitemap plugin with hostname configuration
+  eleventyConfig.addPlugin(sitemapPlugin, {
+    sitemap: {
+      hostname: 'https://prestigiouscleaningandsanitation.com',
+      cacheTime: 600000, // 10 minutes
+      exclude: [
+        '/admin/',
+        '/404.html'
+      ]
+    }
+  });
 
   // allows css, assets, robots.txt and CMS config files to be passed into /public
   eleventyConfig.addPassthroughCopy('./src/css/**/*.css');
@@ -59,6 +72,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('./src/_redirects');
   eleventyConfig.addPassthroughCopy({ './src/robots.txt': '/robots.txt' });
   eleventyConfig.addPassthroughCopy("src/images");
+  
+  // ensure sitemap.xml is copied to the output directory
+  eleventyConfig.addPassthroughCopy({ './src/sitemap.xml': '/sitemap.xml' });
 
   // open on npm start and watch CSS files for changes - doesn't trigger 11ty rebuild
   eleventyConfig.setBrowserSyncConfig({
