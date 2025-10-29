@@ -18,7 +18,7 @@ eleventyNavigation:
 <!-- ============================================ -->
 
 <section id="int-hero">
-  <h1 id="home-h">Contact Us</h1>
+  <h1 id="home-h" class="fx fade-in">Contact Us</h1>
   {% image './src/images/contactbannerimg.png', 'Prestigious Cleaning and Sanitation LLC team ready to assist with
   professional cleaning services', '',
   'lazy', '(max-width: 400px) 400px, (max-width: 850px) 850px, 1920px'%}
@@ -30,8 +30,8 @@ eleventyNavigation:
 
 <section id="cs-contact-242">
   <div class="cs-container">
-    <div class="cs-content">
-      <span class="cs-topper">Let’s Get Started</span>
+    <div class="cs-content fx slide-top staggered-m" style="--i:1">
+      <span class="cs-topper">Let's Get Started</span>
       <h2 class="cs-title">Request Your Free Quote</h2>
       <p class="cs-text">
         Whether you need ongoing janitorial services, detailed sanitation solutions, or post-construction cleanup,
@@ -40,7 +40,7 @@ eleventyNavigation:
       </p>
     </div>
     <!-- Form -->
-    <form id="cs-form-242" name="Contact Form" method="post">
+    <form id="cs-form-242" name="Contact Form" method="post" class="fx slide-top staggered-m" style="--i:2">
       <label class="cs-label">
         Name
         <input class="cs-input" required type="text" id="name-242" name="name" placeholder="John/Jane Doe" />
@@ -61,7 +61,7 @@ eleventyNavigation:
       <label class="cs-label cs-label-message">
         Message
         <textarea class="cs-input cs-textarea" required name="Message" id="message-242"
-          placeholder="Hello, I’m interested in scheduling cleaning services for..."></textarea>
+          placeholder="Hello, I'm interested in scheduling cleaning services for..."></textarea>
       </label>
       <button class="cs-button-solid cs-submit" type="submit">
         Submit Request
@@ -69,7 +69,7 @@ eleventyNavigation:
     </form>
 
     <!-- Contact Info -->
-    <div class="cs-right-section">
+    <div class="cs-right-section fx slide-top staggered-m" style="--i:3">
       <ul class="cs-ul">
         <li class="cs-li">
           <picture class="cs-icon-wrapper">
@@ -108,16 +108,16 @@ eleventyNavigation:
 <!-- ============================================ -->
 
 <section id="reviews">
-  <div class="cs-container">
+  <div class="cs-container fx fade-in">
     <span class="cs-topper">Client Feedback</span>
     <h2 class="cs-title">What Our Clients Say</h2>
     <p class="cs-text">
       At Prestigious Cleaning and Sanitation LLC, we are proud to deliver exceptional cleaning solutions backed by
-      professionalism, consistency, and care. Here’s what some of our clients have to say:
+      professionalism, consistency, and care. Here's what some of our clients have to say:
     </p>
     <ul class="cs-card-group">
       <!-- Review 1 -->
-      <li class="cs-item">
+      <li class="cs-item fx slide-top staggered-m" style="--i:1">
         <p class="cs-item-p">
           Prestigious Cleaning and Sanitation LLC has been providing janitorial services for our office, and the
           difference is night and day. Their team is reliable, thorough, and always professional.
@@ -131,7 +131,7 @@ eleventyNavigation:
           height="16" />
       </li>
       <!-- Review 2 -->
-      <li class="cs-item">
+      <li class="cs-item fx slide-top staggered-m" style="--i:2">
         <p class="cs-item-p">
           We hired them for post-construction cleanup, and they exceeded our expectations. The site was spotless, safe,
           and ready ahead of schedule.
